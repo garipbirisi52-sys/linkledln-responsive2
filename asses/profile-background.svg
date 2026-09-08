@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     id="person-small"
+     aria-hidden="true"
+     data-supported-dps="2048x512"
+     width="222"
+     height="56"
+     viewBox="0 0 552 312"
+     data-token-id="359"
+     class="_3d814ded _0fbd6e3c bac9d367 _4dc266f5 f0fbb8e2"
+     fetchpriority="low"
+     preserveAspectRatio="xMidYMid slice"
+     data--h-bstatus="0OBSERVED">
+
+  <g display="var(--svgDisplayDark)" data--h-bstatus="0OBSERVED">
+    <path fill="#b6b6b6" d="M0 0h552v312H0z" data--h-bstatus="0OBSERVED"></path>
+    <path fill="#777777" d="M304 0h248v312H304z" data--h-bstatus="0OBSERVED"></path>
+    <path fill="#777" d="M0 312h210.68C234.55 264.68 248 211.2 248 154.58S235.08 46.62 212.1 0H0z" data--h-bstatus="0OBSERVED"></path>
+  </g>
+
+  <g display="var(--svgDisplayDark)" data--h-bstatus="0OBSERVED">
+    <path fill="#A0B4C8" d="M0 0h552v312H0z" data--h-bstatus="0OBSERVED"></path>
+    <path fill="#D7E0E8" d="M304 0h248v312H304z" data--h-bstatus="0OBSERVED"></path>
+    <path fill="#8FB9E8" d="M0 312h210.68C234.55 264.68 248 211.2 248 154.58S235.08 46.62 212.1 0H0z" opacity="1" data--h-bstatus="0OBSERVED"></path>
+  </g>
+
+</svg>
