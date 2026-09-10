@@ -21,6 +21,7 @@
     align-content: center;
     max-width: 1128px;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 /* linkedln iconu ve input butonu */
@@ -162,24 +163,28 @@ p {
 }
 
 .all-page {
-    background-color: #F5F4F0;
+    background-color: #F4F2EE;
 }
 
 main {
     padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
 }
 
+/* Container'ın Bootstrap tarafından 1320px yapılmasını engellemek için */
 .container {
     max-width: 1128px !important;
     width: 100% !important;
     margin: 0 auto !important;
-    padding: 0;
+    padding: 0 16px;
 }
 
+/* 3 Sütunun Masaüstü Grid Düzeni */
 .row {
-    display: grid;
-    grid-template-columns: 225px minmax(0, 550px) 300px !important;
-    column-gap: 24px;
+    display: grid !important;
+    grid-template-columns: 225px 555px 300px !important;
+    column-gap: 24px !important;
     justify-content: center;
     margin: 0 !important;
     padding: 0 !important;
@@ -191,11 +196,13 @@ main {
 }
 
 
-.Linkledln-bar {
+.linkedin-card {
     border-radius: 10px;
     background-color: #ffffff;
-    max-width: 100%;
+    width: 100%;
+    border: 1px solid #e0e0e0;
 }
+
 
 .col-2-div-ust {
     width: 100%;
@@ -395,32 +402,123 @@ main {
 .col-6-div3-div4-sag button img:nth-child(3) {
     position: relative;
 }
-/* ------------------------------------ */
-/* Europe Coding School */
-.col-6-div4 {
-
-    background-color: red;
-}
 
 .col-6-div4-1 {
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 6px 12px;
+    align-items: center;
+}
+
+.col-6-div4-1-sol {
+    display: flex;
+    gap: 8px;
+}
+
+.col-6-div4-1-sol2 span {
+    display: block;
+    line-height: 1.1;
 }
 
 .col-6-div4-2 {
-    
+    padding: 0 0 12px 12px;
+}
+
+.col-6-div4-2 span {
+    display: block;
+    line-height: 1.2;
+}
+
+.col-6-div4-2 span:nth-child(2):hover {
+    color: rgb(23, 23, 189);
+    text-decoration: underline;
 }
 
 .col-6-div4-3 {
+    padding: 0 0 8px 8px;
+}
+
+.col-div4-3-solsag {
+    display: flex;
+    gap: 10px;
+    width: 550px;
+    overflow: hidden;
+    height: 376px;
+}
+
+.col-6-div4-3-sol-ust {
+    width: 320px;
+}
+
+.image-under {
+    padding: 15px 16px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    border: 1px solid rgb(226, 217, 217);
+}
+
+
+.col-6-div4-3-sag-alt {
+    padding: 14px 16px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    border: 1px solid rgb(226, 217, 217);
+}
+
+.col-6-div4-3-sag-alt p span {
+    white-space: nowrap;
+
+}
+
+.saga-ucgen {
+    display: inline-block;
+    position: relative;
+    top: -200px;
+    left: 140px;
     
+}
+
+.saga-ucgen button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
 
 .col-6-div4-3-alt {
-    
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    height: 52px;
 }
 
-/* ------------------------------------ */
+.col-6-div4-3-alt-sol {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
-/* Mehmet Burçin Gürses Gönderisi  */
+.col-6-div4-3-alt-sol button {
+    border-style: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.col-6-div4-3-alt-sol button span {
+    font-weight: 600;
+    opacity: 0.7;
+
+}
+
+.col-6-div4-3-alt-sag button {
+    border-style: none;
+    background-color: #ffffff;
+}
+
 .col-6-div4-4-1 {
     display: flex;
     justify-content: space-between;
@@ -485,15 +583,14 @@ main {
 .col-6-div4-4-5 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 12px;
     height: 42px;
+    align-items: center;
 }
 
 .col-6-div4-4-5-sol {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .col-6-div4-4-5-sol button {
@@ -501,11 +598,23 @@ main {
     border-style: none;
     display: flex;
     align-items: center;
+    width: 60px;
+    height: 32px;
+    justify-content: center;
+}
+
+.col-6-div4-4-5-sol button:hover {
+    background-color: #eeeded;
+    border-radius: 2px;
+}
+
+.col-6-div4-4-5-sol button img {
+    height: 16px;
 }
 
 .col-6-div4-4-5-sol button span {
-    opacity: 0.9;
-    font-size: 14px;
+    opacity: 0.8;
+    font-size: 15px;
 }
 
 .col-6-div4-4-6 {
@@ -573,10 +682,21 @@ main {
     height: 32px;
 }
 
+.reklam-footer {
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    position: sticky;
+    top: 72px;
+    z-index: 10;
+}
+
 .col-4-div3 {
     padding: 8px 16px 0 8px;
     background-color: rgb(216, 216, 216);
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -623,36 +743,96 @@ main {
     height: fit-content;
 }
 
+.col-6 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 .col-2-div {
     display: grid;
     gap: 10px;
     width: 100%;
 }
 
-.col-4 {
-    height: fit-content;
-}
-
-.col-4-div {
-    display: grid;
-    gap: 10px;
-}
-
-.reklam-footer {
-    display: grid;
-    gap: 8px;
-    position: sticky;
-    top: 72px;
-    z-index: 20;
-}
-
 .col-6-div {
     display: grid;
     gap: 10px;
+    width: 100%;
 }
 
-.col-6 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+/* 
+.col-4 {
+    height: 100%;
+} */
+
+/* style.css satır 766-774 arasını bununla değiştirin */
+.col-4-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px !important;
+}
+
+.messengar-box {
+    width: 288px;
+    height: 47px;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 200;
+    border: 1px solid #dedede;
+}
+
+.soltaraf {
+    display: flex;
+    gap: 10px;
+    padding: 4px;
+    margin: 0 4px;
+    color: #000000e6;
+    font-size: 16px;
+    align-items: center;
+}
+
+.soltaraff img,
+.sol-taraff div {
+    top: 6px;
+    position: relative;
+}
+
+.green-point {
+    width: 12px;
+    height: 12px;
+    background-color: #01754F;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+    left: 23px;
+}
+
+.sagtaraf {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    padding-right: 10px;
+
+}
+
+.sagtaraf img {
+    width: 16px;
+    height: 16px;
 }

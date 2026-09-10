@@ -77,23 +77,41 @@
     }
 }
 
-@media (max-width:425px) {
+@media (max-width: 426px) {
+
     .header {
-        overflow-x: auto;
+        overflow: visible;
     }
 
     .navbar {
-        padding: 0 16px;
+        padding: 0;
+        overflow: auto;
     }
 
+    /* Sol kısım: Sabit kalır ve z-index ile en üstte durur */
     .navbar-div1 {
         position: sticky;
+        left: 0px;
+        z-index: 20;
+        /* Üstte kalmasını sağlar */
         background-color: #ffffff;
-        left: 0;
+        /* Altına girenler görünmesin diye arka plan şart */
         height: 52px;
         display: flex;
         align-items: center;
-        overflow-x: hidden;
+        flex-shrink: 0;
+        /* Daralıp küçülmesini engeller */
+    }
+
+    /* Sağ kısım: Sola kaydıkça navbar-div1'in altına girer */
+    .navbar-div2-div3 {
+        display: flex;
+        flex-shrink: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* İkonlar daralmasın, yana doğru uzayıp scroll oluştursun */
+        z-index: 1;
+        /* navbar-div1'in z-index'inden düşük olmalı */
     }
 
     .navbar-div1 img {
@@ -105,16 +123,22 @@
         align-items: center;
     }
 
-    .navbar-div2-divler {
-        width: 48px;
+    
+
+    .navbar-div2 {
+        display: flex;
+        flex-shrink: 0;
     }
 
-    .navbar-div2-div3 {
-        margin-left: 200px;
+    .navbar-div2-divler {
+        width: 48px;
+        flex-shrink: 0;
     }
 
     .navbar-div3 {
         padding: 0;
+        display: flex;
+        flex-shrink: 0;
     }
 
     .navbar-div2-divler-divvv span {
