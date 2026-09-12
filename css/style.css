@@ -85,6 +85,10 @@
     border-bottom: 2px solid black;
 }
 
+.navbar-div2-divler:nth-child(1):hover {
+    border-bottom: none;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -103,8 +107,10 @@ a {
     color: black;
 }
 
-.navbar-div2-divler a img:hover {
-    color: black;
+.navbar-div2-divler a:hover {
+    background-color: #e4e3e3;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
 }
 
 .ben-ters-ucgen {
@@ -131,6 +137,12 @@ a {
     padding: 4px 0;
 }
 
+.navbar-div3-div1:hover {
+    background-color: #e4e3e3;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+
 .navbar-div3-div1-1 span {
     display: inline-flex;
     height: 19px;
@@ -141,6 +153,8 @@ a {
 .navbar-div3-div1 a p {
     color: #00000099;
 }
+
+.navbar-div3-div1 a:hover {}
 
 .navbar-div3-div1 a p:hover {
     color: black;
@@ -160,6 +174,10 @@ p {
     color: #915907;
     font-size: 12px;
     text-decoration: underline;
+}
+
+.navbar-div3-div2 a:hover {
+    color: #4d3107;
 }
 
 .all-page {
@@ -475,7 +493,7 @@ main {
     position: relative;
     top: -200px;
     left: 140px;
-    
+
 }
 
 .saga-ucgen button {
@@ -645,16 +663,47 @@ main {
     padding: 8px 20px 4px;
 }
 
-.col-4-div1-3 {
+/* kaldım */
+
+.etiketaa {
+    display: block;
+    width: 100%;
+    overflow: hidden;
     padding: 4px 16px 4px 20px;
+    min-width: 0;
+}
+
+.col-4-div1-3 {
     font-size: 14px;
     font-weight: 600;
     opacity: 1;
+    width: 100%;
+    min-width: 0;
+    justify-items: start;
+    display: grid;
 }
 
-.col-4-div1-3 span:nth-child(3) {
+.col-4-div1-3 span {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.etiketaa:hover {
+    background-color: #eeecec;
+}
+
+.col-4-div1-3 span:nth-child(1) {
+    font-size: 13.1px;
+}
+
+
+.col-4-div1-3 span:nth-child(2) {
     font-size: 12px;
     color: #666666;
+    font-weight: normal;
 }
 
 .col-4-div1-8 {
@@ -666,7 +715,28 @@ main {
     opacity: 0.8;
 }
 
+.col-4-div1-8 a {
+    display: flex;
+    gap: 5px;
+    width: 80%;
+}
+
+.col-4-div1-8 a:hover {
+    background-color: #eeecec;
+}
+
+
+
+.col-4-div1-game-a:hover {
+    background-color: #eeecec;
+}
+
+#etiketa {
+    width: 65%;
+}
+
 .col-4-div2-games {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 8px 20px;
@@ -675,6 +745,12 @@ main {
 .game1 {
     display: flex;
     gap: 8px;
+}
+
+.game1 div {
+    display: grid;
+    justify-items: start;
+
 }
 
 .game1 img {
@@ -697,6 +773,10 @@ main {
     width: 100%;
     max-width: 300px;
     box-sizing: border-box;
+}
+
+.col-4-div3-div1 a {
+    display: inline;
 }
 
 .footer {
