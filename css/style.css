@@ -219,9 +219,10 @@ main {
     border: 1px solid #e0e0e0;
 }
 
-
 .col-2-div-ust {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-2-div-ust img:nth-of-type(1) {
@@ -236,8 +237,8 @@ main {
     height: 76px;
     border: 2px solid white;
     position: relative;
-    left: 12px;
-    top: -15px;
+    margin-left: 15px;
+    top: -20px;
 }
 
 .col-2-div-alt {
@@ -257,7 +258,7 @@ main {
 .col-2-div-alt2 img {
     width: 24px;
     height: 24px;
-    border-radius: 3px;
+    border-radius: 3px; 
 }
 
 .col-2-div2 {
@@ -276,6 +277,7 @@ main {
 }
 
 .col-2-div3-ust {
+    width: 100%;
     padding: 4px 16px;
     display: flex;
     gap: 4px;
@@ -285,6 +287,7 @@ main {
 
 .col-2-div3-alt {
     padding: 4px 16px;
+    width: 100%;
 }
 
 .col-2-div4 {
@@ -308,10 +311,17 @@ main {
     gap: 10px;
 }
 
-.col-6-div1-alt {
+.col-6-div1-ust button {
+    background-color: #ffffff;
+}
+
+.col-6-div1-ust button:hover {
+    background-color: #f3f3f3;
+}
+
+.col-6-div1-alt{
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .col-6-div1-alt1 {
@@ -321,9 +331,16 @@ main {
     padding: 12px 8px;
 }
 
+.col-6-div1-alt1:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
 .col-6-div2 {
     display: flex;
     align-items: center;
+    height: 16px;
+    width: 100%;
 }
 
 .col-6-div3-div1 {
@@ -343,6 +360,11 @@ main {
     display: flex;
     gap: 20px;
     padding-right: 20px;
+}
+
+.col-6-div3-div1-2 a:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-6-div3-div1-div1 {
@@ -383,6 +405,21 @@ main {
     gap: 20px;
 }
 
+.col-6-div3-div4-sol button {
+    background-color: #ffffff;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 32px;
+    justify-content: center;
+}
+
+.col-6-div3-div4-sol button:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
 .col-6-div3-div4-sol1 {
     display: flex;
     gap: 3px;
@@ -405,6 +442,11 @@ main {
     background-color: #ffffff;
 }
 
+.col-6-div3-div4-sag button:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
 .col-6-div3-div4-sag button img:nth-child(1) {
     position: relative;
     left: 16px;
@@ -423,7 +465,6 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 12px 12px 6px 12px;
-    align-items: center;
 }
 
 .col-6-div4-1-sol {
@@ -448,6 +489,11 @@ main {
 .col-6-div4-2 span:nth-child(2):hover {
     color: rgb(23, 23, 189);
     text-decoration: underline;
+}
+
+.col-6-div4-1-sag-a:hover {
+    background-color: #f3f3f3;
+    border-radius: 50%;
 }
 
 .col-6-div4-3 {
@@ -490,8 +536,7 @@ main {
     display: inline-block;
     position: relative;
     top: -200px;
-    left: 140px;
-
+    left: -120px;
 }
 
 .saga-ucgen button {
@@ -522,6 +567,14 @@ main {
     display: flex;
     align-items: center;
     gap: 3px;
+    width: 45px;
+    height: 30px;
+    justify-content: center;
+}
+
+.col-6-div4-3-alt-sol button:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-6-div4-3-alt-sol button span {
@@ -533,6 +586,12 @@ main {
 .col-6-div4-3-alt-sag button {
     border-style: none;
     background-color: #ffffff;
+    width: 24px;
+}
+
+.col-6-div4-3-alt-sag button:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-6-div4-4-1 {
@@ -547,11 +606,27 @@ main {
     margin: 4px 4px 4px 12px;
 }
 
+.col-6-div4-4-1-sols a:hover {
+    text-decoration: underline;
+}
+
+.col-6-div4-4-1-sols span {
+    display: flex;
+    gap: 3px;
+    white-space: nowrap;
+
+}
+
 .col-6-div4-4-1-sag {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-right: 10px;
+}
+
+.col-6-div4-4-1-sag div:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-6-div4-4-2 {
@@ -577,6 +652,17 @@ main {
     align-items: center;
 }
 
+.col-6-div4-4-2-sag1 {
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.col-6-div4-4-2-sag1:hover {
+    background-color: rgb(199, 201, 226);
+}
+
 .col-6-div4-4-3 {
     padding: 4px 12px 8px;
     line-height: 1.2;
@@ -586,7 +672,7 @@ main {
     font-size: 14px;
 }
 
-.col-6-div4-4-3 span:nth-child(5):hover {
+.col-6-div4-4-3 a span:hover {
     color: blue;
     text-decoration: underline;
 }
@@ -620,8 +706,8 @@ main {
 }
 
 .col-6-div4-4-5-sol button:hover {
-    background-color: #eeeded;
-    border-radius: 2px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-6-div4-4-5-sol button img {
@@ -655,6 +741,11 @@ main {
     padding: 0 12px 0 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.col-4-div1-1 a div:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .col-4-div1-2 {
@@ -867,7 +958,7 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     right: 10px;
     bottom: 0;
@@ -875,7 +966,14 @@ main {
     border: 1px solid #dedede;
 }
 
+.messengar-box-a {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+
 .soltaraf {
+    /* width: %; */
     display: flex;
     gap: 10px;
     padding: 4px;
@@ -905,12 +1003,18 @@ main {
 .sagtaraf {
     align-items: center;
     display: flex;
-    gap: 12px;
-    padding-right: 10px;
-
+    gap: 5px;
 }
 
-.sagtaraf img {
-    width: 16px;
-    height: 16px;
+.sagtaraf-1 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sagtaraf a:hover {
+    background-color: #00000014;
+    border-radius: 50%;
 }
