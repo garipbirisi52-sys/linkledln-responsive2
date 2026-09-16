@@ -165,6 +165,10 @@
     .col-2-div-alt2 a:nth-child(2) {
         width: 52%;
     }
+
+    .col-2-div-ust img:nth-of-type(1) {
+        height: 56px;
+    }
 }
 
 /* 426px */
@@ -308,7 +312,7 @@
         width: 71%;
     }
 
-    .col-6-div4-4-1-sols span a{
+    .col-6-div4-4-1-sols span a {
         white-space: nowrap;
     }
 
