@@ -35,6 +35,21 @@
     .navbar-div2-divler-divvv span {
         margin-top: 8px;
     }
+
+    #caret-small {
+        display: none;
+    }
+
+    .navbar-div3-div1 {
+        display: block;
+        align-content: center;
+        padding-left: 20px;
+    }
+
+    .navbar-div3-div1 a {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width:768px) {
@@ -123,7 +138,7 @@
         align-items: center;
     }
 
-    
+
 
     .navbar-div2 {
         display: flex;
@@ -144,4 +159,5 @@
     .navbar-div2-divler-divvv span {
         margin-top: 8px;
     }
+
 }
