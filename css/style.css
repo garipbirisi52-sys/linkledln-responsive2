@@ -408,11 +408,11 @@ main {
 }
 
 .col-6-div3-div2-span {
-    color: #00000099;
+    color: #00000099 !important;
 }
 
 .col-6-div3-div2-span:hover {
-    color: #004182;
+    color: #004182 !important;
     text-decoration: underline;
 }
 
@@ -460,7 +460,7 @@ main {
     align-items: center;
 }
 
-.col-6-div3-div4-sol1 span {
+.col-6-div3-div4-sol1 button span {
     font-size: 14px;
 }
 
@@ -756,22 +756,23 @@ main {
 
 .col-6-div4-4-3 {
     padding: 4px 12px 8px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .col-6-div4-4-3 span {
     font-size: 14px;
-}
-
-.col-6-div4-4-3 a span:hover {
-    color: blue;
-    text-decoration: underline;
+    color: #000000e6;
 }
 
 .col-6-div4-4-4 {
-    display: flex;
-    justify-content: center;
-}
+    max-width: 75% !important;
+    min-width: 0;
+} 
+
+/* .col-6-div4-4-4 img {
+    width:70% ;
+    height: auto;
+} */
 
 .col-6-div4-4-5 {
     display: flex;
@@ -1107,4 +1108,12 @@ main {
 .sagtaraf a:hover {
     background-color: #00000014;
     border-radius: 50%;
+}
+
+.iconcolor {
+    color: #000000bf;
+}
+
+.iconcolor:hover {
+    color: #000000e6;
 }
