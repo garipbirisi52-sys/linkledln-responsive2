@@ -201,12 +201,12 @@ main {
 }
 
 /* Container'ın Bootstrap tarafından 1320px yapılmasını engellemek için */
-.container {
+/* .container {
     max-width: 1128px !important;
     width: 100% !important;
     margin: 0 auto !important;
     padding: 0 16px;
-}
+} */
 
 /* 3 Sütunun Masaüstü Grid Düzeni */
 .row {
@@ -225,7 +225,7 @@ main {
 
 
 .linkedin-card {
-    border-radius: 10px;
+    border-radius: 0.8rem;
     background-color: #ffffff;
     width: 100%;
     border: 1px solid #e0e0e0;
@@ -458,10 +458,19 @@ main {
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    color: #000000bf;
+}
+
+.col-6-div3-div4-sol1 button:hover {
+    color: #000000e6;
 }
 
 .col-6-div3-div4-sol1 button span {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
 }
 
 .col-6-div3-div4-sag {
@@ -644,16 +653,17 @@ main {
     width: 45px;
     height: 30px;
     justify-content: center;
+    color: #000000bf;
 }
 
 .col-6-div4-3-alt-sol button:hover {
     background-color: #f3f3f3;
     border-radius: 5px;
+    color:#000000e6;
 }
 
 .col-6-div4-3-alt-sol button span {
     font-weight: 600;
-    opacity: 0.7;
 
 }
 
@@ -835,9 +845,14 @@ main {
     justify-content: space-between;
 }
 
+.col-4-div1-1 a div {
+    color: #000000bf; 
+}
+
 .col-4-div1-1 a div:hover {
-    background-color: #f3f3f3;
-    border-radius: 10px;
+    background-color: #8c8c8c1a;
+    border-radius: 50%;
+    color: #000000e6;
 }
 
 .col-4-div1-2 {
@@ -855,11 +870,12 @@ main {
 .col-4-div1-3 {
     font-size: 14px;
     font-weight: 600;
-    opacity: 1;
+    font-style: normal;
     width: 100%;
     min-width: 0;
     justify-items: start;
     display: grid;
+    color: #1F1F1F;
 }
 
 .col-4-div1-3 span {
@@ -871,11 +887,14 @@ main {
 }
 
 .etiketaa:hover {
-    background-color: #eeecec;
+    background-color: #8c8c8c33
+;
 }
 
 .col-4-div1-3 span:nth-child(1) {
-    font-size: 13.1px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 
@@ -886,32 +905,35 @@ main {
 }
 
 .col-4-div1-8 {
-    padding: 4px 16px 4px 20px;
+    padding: 4px 16px 4px 12px;
     display: flex;
     gap: 5px;
     font-size: 15px;
     font-weight: 600;
-    opacity: 0.8;
 }
 
 .col-4-div1-8 a {
     display: flex;
+    align-items: center;
     gap: 5px;
-    width: 80%;
+    width: fit-content;
+    padding-inline: 8px;
+    padding-block: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000bf;
 }
 
 .col-4-div1-8 a:hover {
-    background-color: #eeecec;
+    background-color: #8c8c8c1a;
+    border-radius: 4px;
+    color: #000000e6;
 }
 
 
 
 .col-4-div1-game-a:hover {
-    background-color: #eeecec;
-}
-
-#etiketa {
-    width: 65%;
+    background-color:#8c8c8c33;
 }
 
 .col-4-div2-games {
@@ -948,14 +970,31 @@ main {
 
 .col-4-div3 {
     padding: 8px 16px 0 8px;
-    background-color: rgb(216, 216, 216);
-    width: 100%;
-    max-width: 300px;
+    background-color: #8c8c8c33;
+    width: 300px;
+    height: 252px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.col-4-div3-div1 {
+    line-height: 1.15;
 }
 
 .col-4-div3-div1 a {
-    display: inline;
+    color: #0000ee;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+
+.uyari-reklam{
+    justify-items: start;
+    padding: 1px 0;
+    color: #0000ee;
+}
+
+.uyari-reklam:active{
+    color: red;
 }
 
 .footer {
@@ -965,13 +1004,24 @@ main {
 
 .footer-1 {
     font-size: 12px;
-    opacity: 0.8;
-    line-height: 2;
+    line-height: 1.55;
+}
+
+.footer-1 a span {
+    color: #00000099;
 }
 
 .footer-1-1 {
     display: flex;
-    opacity: 0.8;
+    justify-content: center;
+}
+
+.footer-1-1 a {
+    width: fit-content;
+    margin-inline-end: 8px;
+    margin-inline-start: 8px;
+    margin-block-end: 4px;
+    margin-block-start: 4px;
 }
 
 .footer-1-2 {
@@ -981,7 +1031,8 @@ main {
 
 .footer-2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-2,
@@ -1112,6 +1163,7 @@ main {
 
 .iconcolor {
     color: #000000bf;
+    font-weight: 600;
 }
 
 .iconcolor:hover {
