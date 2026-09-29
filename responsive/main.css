@@ -229,6 +229,11 @@
     }
 }
 
+@media (max-width:400px) {
+    .col-div4-3-solsag {
+        width: 380px;
+    }
+}
 
 @media (max-width:320px) {
 
