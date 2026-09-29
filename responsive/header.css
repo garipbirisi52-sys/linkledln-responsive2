@@ -6,7 +6,7 @@
 
     .navbar-div2-divler {
         align-items: center;
-        max-width: 65px;
+        width: 65px;
     }
 
     .navbar-div3-div1 a img {
@@ -54,10 +54,6 @@
 
 @media (max-width:768px) {
 
-    .navbar-div1-div2 input:active {
-        background-color: red;
-    }
-
     .navbar {
         padding: 0 16px;
     }
@@ -68,7 +64,7 @@
         gap: 0;
     }
 
-    .navbar-div1 input {
+    .navbar-div1-div2 input {
         display: none;
     }
 
@@ -92,7 +88,7 @@
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 576px) {
 
     .header {
         overflow: visible;
@@ -100,45 +96,36 @@
 
     .navbar {
         padding: 0;
-        overflow: auto;
+        overflow: scroll;
     }
 
-    /* Sol kısım: Sabit kalır ve z-index ile en üstte durur */
+    
     .navbar-div1 {
         position: sticky;
         left: 0px;
         z-index: 20;
-        /* Üstte kalmasını sağlar */
-        background-color: #ffffff;
-        /* Altına girenler görünmesin diye arka plan şart */
+        background-color: #ffffff;      
         height: 52px;
         display: flex;
         align-items: center;
         flex-shrink: 0;
-        /* Daralıp küçülmesini engeller */
     }
 
-    /* Sağ kısım: Sola kaydıkça navbar-div1'in altına girer */
+    
     .navbar-div2-div3 {
         display: flex;
         flex-shrink: 0;
-        overflow-x: auto;
+        overflow-x: scroll;
         overflow-y: hidden;
-        /* İkonlar daralmasın, yana doğru uzayıp scroll oluştursun */
         z-index: 1;
-        /* navbar-div1'in z-index'inden düşük olmalı */
-    }
-
-    .navbar-div1 img {
-        top: -10px;
     }
 
     .navbar-div1-div2 {
-        width: 50px;
+        width: 66px !important;
+        height: 34px;
+        justify-content: center;
         align-items: center;
     }
-
-
 
     .navbar-div2 {
         display: flex;
@@ -146,7 +133,7 @@
     }
 
     .navbar-div2-divler {
-        width: 48px;
+        max-width: 48px;
         flex-shrink: 0;
     }
 
